@@ -1,0 +1,41 @@
+SID Number: State identification Number, Unique Integer, No cleaning needed
+
+TDCJ Number: Texas Dept of Criminal Justice Number, Unique Integer, No cleaning needed
+
+Name: Full Name, String, no cleaning needed
+
+Current Facility: Name of facility, String, no cleaning needed
+
+Gender: String, no cleaning needed, already standardized to either M or F
+
+Race: String, no cleaning needed, already standardized to B, W, H, A, or U
+
+Age: Integer, no cleaning needed
+
+Projected Release: Date, need to declare all life sentences as 1/1/9999
+
+Maximum Sentence Date: Date, need to declare all life sentences as 1/1/9999
+
+Parole Eligibility Date: Date, Needs cleaning for null values
+
+Case Number: String, not relevant to data overall
+
+County: String, No need for cleaning
+
+Offense Code: String, too many different codes to streamline the categorization
+
+TDCJ Offense: String, no cleaning needed
+
+Sentence Date: Date, need to remove rows with empty sentence date
+
+Offense Date: Date, need to remove rows with empty offense date
+
+Sentence (Years): String, currently a mix of number of years plus Life, LWOP or Capital Life. Need to turn the rows with an actual number 
+into a "Determinate" category and calculate sentence length in another column.
+
+Last Parole Decision: String, currently a mix of either Denied or Approved on a certain date, need to condense this column into just a date and create
+a boolean column for either approved or denied
+
+Next Parole Review Date: Date, mix of N/A, "Unavailable at this time", blank, or an actual date. Needs cleaning.
+
+Parole Review Status: String, either NOT IN REVIEW PROCESS, IN PAROLE REVIEW PROCESS, or blank. Needs cleaning.
